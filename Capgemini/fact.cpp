@@ -2,13 +2,15 @@
 using namespace std;
 int main(){
   int n,fact;
-  cout<<"Enter the number=";
+  cout<<"Enter the fact num=";
   cin>>n;
   fact=1;
   while(n>=1){
     fact=fact*n;
     n--;
   }
-  cout<<"Fact is="<<fact;
+  cout<<"the fact of the num is="<<fact;
   return 0;
+  
+  
 }
