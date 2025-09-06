@@ -14,16 +14,16 @@ int main() {
     int i = 0, j = n - 1;
 
     while (i < j) {
-        if (arr[i] < 0) {   // Left already negative, सही जगह है
+        if (arr[i] < 0) {   
             i++;
             continue;
         }
-        if (arr[j] >= 0) {  // Right already positive, सही जगह है
+        if (arr[j] >= 0) { 
             j--;
             continue;
         }
 
-        // Swap arr[i] और arr[j]
+        // Swap arr[i] and arr[j]
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
