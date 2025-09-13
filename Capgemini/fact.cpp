@@ -6,8 +6,7 @@ int  main(){
   cin>>n;
   fact=1;
   while(n>=1){
-    fact=fact*n;
-    n--;
+    fa
   }
   cout<<"this is the fact of this num="<<fact;
   return 0;
