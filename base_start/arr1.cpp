@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-  int arr[10];
-  cout<<"array is successfully created";
+  int a=5 ;
+  cout<<"the address of a is"<<&a<<endl;
   return 0;
 }
