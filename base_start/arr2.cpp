@@ -2,24 +2,26 @@
 using namespace std;
 
 int main() {
-    int n;
-    
+    int arr[100], n, i;
+    int max;
+
     cout << "Enter number of elements: ";
     cin >> n;
 
-    int arr[n]; // Array of size n
-
-    cout << "Enter " << n << " elements: ";
-    for(int i = 0; i < n; i++) {
+    cout << "Enter " << n << " elements:\n";
+    for(i = 0; i < n; i++) {
         cin >> arr[i];
     }
 
-    int sum = 0;
-    for(int i = 0; i < n; i++) {
-        sum += arr[i];
+    max = arr[0];  // Pehla element ko max maan liya
+
+    for(i = 1; i < n; i++) {
+        if(arr[i] > max) {
+            max = arr[i]; // agar bada number mile to max update
+        }
     }
 
-    cout << "Sum of array elements = " << sum;
-    
+    cout << "Largest number: " << max;
+
     return 0;
 }
